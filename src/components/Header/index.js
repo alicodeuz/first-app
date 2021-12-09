@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '../Common/Button';
+
 
 const Gallery = () => {
   return (
@@ -11,6 +13,9 @@ const Gallery = () => {
           <li className="nav-item"><a className="nav-link" href="#gallery">Gallery</a></li>
           <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
         </ul>
+        <Button status="primary" />
+        <Button status="danger" />
+        <Button status="warning" />
       </div>
     </header>
   )
