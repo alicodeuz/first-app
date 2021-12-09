@@ -1,11 +1,12 @@
 import React from 'react'
 
 export default function Button(props) {
-  console.log(props);
-  const { status } = props;
+  const { status = "primary", title = "Download", outline = false } = props;
+  const className = `btn btn-${outline ? 'outline-' : ''}${status} rounded-pill px-3`;
+
   return (
-    <button className={`btn btn-${status} rounded-pill px-3`}>
-      Download
+    <button {...props} className={className}>
+      {title}
     </button>
   )
 }
