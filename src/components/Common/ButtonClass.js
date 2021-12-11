@@ -18,7 +18,12 @@ export default class Button extends React.Component {
     const className = `btn btn-${outline ? 'outline-' : ''}${status} rounded-pill px-3`;
 
     return (
-      <button {...this.props} className={className} onClick={this.login} onDoubleClick={this.logOut.bind(this)}>
+      <button
+        {...this.props}
+        className={className}
+        onClick={this.login}
+        onDoubleClick={this.logOut.bind(this)}
+      >
         {title}
       </button>
     )
