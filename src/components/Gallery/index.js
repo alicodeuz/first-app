@@ -39,9 +39,9 @@ const Gallery = () => {
       <section className="py-3">
         <div className="container">
           <h2>Gallery</h2>
-          <div className="row row-cols-1 row-cols-md-2 g-4">
+          <div className="row row-cols-1 row-cols-md-4 g-4">
             {
-              images.filter(item => item.disabled).map((item, index) => {
+              images.map((item, index) => {
                 const { src, alt, link, disabled } = item;
                 let title = `My ${index + 1} Image`;
 

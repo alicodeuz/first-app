@@ -1,4 +1,5 @@
 import React from 'react';
+import AddItem from '../Gallery/AddItem';
 
 const Gallery = () => {
   return (
@@ -9,6 +10,7 @@ const Gallery = () => {
         <input type="text" name="search" placeholder="Search images" />
         <p>Popular Images: christmas, wallpaper, thanksgiving, background, nature, winter, cat, snow, food, christmas tree, sky,</p>
       </div>
+      <AddItem />
     </section>
   )
 };

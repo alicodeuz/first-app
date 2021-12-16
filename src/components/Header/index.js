@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../Common/Button';
-import ButtonClass from '../Common/ButtonClass';
+// import ButtonClass from '../Common/ButtonClass';
 
 const Gallery = () => {
   const user = { name: 'Abdulla', lastName: 'Qurbonov' };
@@ -38,11 +38,11 @@ const Gallery = () => {
             id="test-id"
             onClick={handleLogin}
           />
-          <ButtonClass
+          {/* <ButtonClass
             status="primary"
             title="Class Button"
             id="test-id"
-          />
+          /> */}
         </div>
       </div>
     </header>
